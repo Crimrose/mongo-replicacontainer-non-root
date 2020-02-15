@@ -1,0 +1,16 @@
+version: '3.2'
+services:
+  mongo-0:
+    build:
+      context: mongodb
+    environment:
+      TERM:
+      HOSTNAME:
+      MONGODB_USER: ${MONGO_USER}
+      MONGODB_PASSWORD: ${MONGO_PASS}
+      MONGODB_DATABASE: ${MONGO_DB_NAME}
+      MONGODB_ADMIN_PASSWORD: ${MONGO_PASS}
+      MONGODB_REPLICA_NAME:
+      MONGODB_KEYFILE_VALUE:
+      MONGODB_SMALLFILES:
+      MONGODB_SERVICE_NAME:
